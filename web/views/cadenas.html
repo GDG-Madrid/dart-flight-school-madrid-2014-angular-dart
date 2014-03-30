@@ -1,0 +1,12 @@
+
+<div cadenas-controller ng-cload>
+
+  <h1>{{ cadenas.headText }}</h1>
+  
+  <ul class="media-list">
+    <li class="media" ng-repeat="cadena in cadenas.cadenasList">
+        <a href="/#/programas/{{ cadena.id }}">{{ cadena.title }}</a>
+    </li>
+  </ul>
+  
+</div>

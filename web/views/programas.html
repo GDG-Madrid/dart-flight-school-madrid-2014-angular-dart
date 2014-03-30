@@ -1,0 +1,13 @@
+
+<div programas-controller ng-cload>
+
+  <h1>{{ programas.headText }}</h1>
+  
+  <ul class="media-list">
+    <li class="media" ng-repeat="programa in programas.programasList">
+        <a href="/#/audios/{{ programa.id }}">{{programa.name}}</a>
+    </li>
+  </ul>
+  
+</div>
+

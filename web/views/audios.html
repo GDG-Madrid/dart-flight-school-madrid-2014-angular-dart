@@ -1,0 +1,15 @@
+
+<div audios-controller ng-cload>
+
+  <h1>{{ audios.headText }}</h1>
+  
+  <ul class="media-list">
+    <li class="media" ng-repeat="audio in audios.audiosList">
+      <div ng-repeat="quality in audio.qualities">
+        <a href="{{ quality.filePath }}"> {{ quality.preset}} </a>
+      </div>
+      {{audio.title}}
+    </li>
+  </ul>
+  
+</div>
